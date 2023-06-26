@@ -136,6 +136,7 @@ taskController.updateTask = async (req, res, next) => {
 // deleteTask
 taskController.deleteTask = async (req, res, next) => {
   const targetId = req.params.id;
+  console.log(targetId);
   const options = { new: true };
   try {
     if (!ObjectId.isValid(targetId))

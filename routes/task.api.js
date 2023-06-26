@@ -46,6 +46,6 @@ router.put("/:id", updateTask);
  * @access public
  */
 
-router.put("/:id", deleteTask);
+router.delete("/:id", deleteTask);
 
 module.exports = router;
